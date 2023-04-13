@@ -11,7 +11,7 @@
 .nav {
     background-color: rgb(72, 72, 72);
     padding: 30px;
-    color: aliceblue;
+    color: rgb(235, 238, 240);
     display: flex;
     justify-content: center;
 }
