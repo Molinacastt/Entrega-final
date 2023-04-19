@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,500;1,400&display=swap');
 
 * {
     padding: 0%;
@@ -6,44 +6,58 @@
     box-sizing: border-box;
 }
 
-/*NAV BAR BEGINNING */
+/* BODY INDEX */
 
-.nav {
-    background-color: rgb(62, 58, 58);
-    padding: 30px;
-    color: rgb(214, 220, 224);
-    display: flex;
-    justify-content: center;
-    height: 100%;
-
-}
-
-.nav-ul {
+.img1-ind {
     display: flex;
     flex-direction: column;
-    font-size: x-large;
-    text-align: center;
-    gap: 100px;
-    list-style: none;
-    
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.nav-link {
-    color: aliceblue;
-    text-decoration: none;
-    height: 100%;
+@media (min-width: 800px) {
+    .img1-ind {
+        flex-direction: row;
+    }
 }
+
+/*NAV BAR BEGINNING */
 
 .logo {
     background-image: url(../multimedia/Bandalos\ vintage\ 1.jpg);
-    height: 500px;
-    width: 100%;
-    object-fit: cover;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 42px;
-    color: gold;
     background-repeat: no-repeat;
+    height: 600px;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    font-size: 34px;
+}
+
+.navbar-nav {
+    display: flex;
+    padding-left: 530px;
+    color: white;
+}
+
+@media (min-width: 800px){
+    .navbar-nav {
+        padding-left: 10px;
+    }
+}
+
+.navbar {
+    background-color: rgba(41, 41, 39, 0.5);
+}
+
+.navbar-brand {
+    color: rgb(226, 195, 17);
+}
+
+.navbar-toggler {
+    background-color: rgb(226, 237, 237);
 }
 
 .nav-link:hover {
@@ -55,11 +69,11 @@
     border-radius: 4px;
 }
 
-@media screen and (min-width: 699px){
+/*@media screen and (min-width: 699px){
     .nav-ul{
         flex-direction: row;
     }
-}
+}*/
 
 /* NAV BAR END */
 
@@ -73,30 +87,12 @@
 
 /* MAIN INICIO END */
 
-
-/* FOOTER BEGINNING */
-
-.footer {
-    padding: 30px;
-    margin: 0;
-    text-align: center;
-    background-color: rgb(177, 177, 172);
-    list-style: none;
-
-}
-
-.footer ul {
-    text-decoration: none;
-    list-style: none;
-    padding: 20px;
-}
-
-/* FOOTER END */
-
 /* DISCOGRAFIA BEGINNING */
 
 .main-disc {
     padding: 30px;
+    display:grid;
+    gap: 15px;
 }
 
 .main-disc h2 {
@@ -125,8 +121,16 @@
     padding: 20px;
 }
 
+
+@media screen and (min-width: 699px){
+    .spot1{
+        flex-direction: row;
+    }
+}
+
 .spot2 {
     display: flex;
+    flex-direction: column;
     padding: 30px;
     gap: 20px;
     border: 2px solid black;
@@ -138,8 +142,15 @@
     padding: 20px;
 }
 
+@media screen and (min-width: 699px){
+    .spot2{
+        flex-direction: row;
+    }
+}
+
 .spot3 {
     display: flex;
+    flex-direction: column;
     padding: 30px;
     gap: 20px;
     border: 2px solid black;
@@ -151,11 +162,13 @@
     padding: 20px;
 }
 
-@media screen and (min-width: 699){
-    .spot1{
+@media screen and (min-width: 699px){
+    .spot3{
         flex-direction: row;
     }
 }
+
+
 
 /* DISCOGRAFIA END */
 
@@ -165,7 +178,7 @@
 }
 
 .grid {
-    background-color: rgb(86, 82, 76);
+    background-color: rgb(211, 189, 156);
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(5, 2fr);
@@ -277,3 +290,22 @@
 }
 
 /* JOURNEY END */
+
+/* FOOTER BEGINNING */
+
+.footer {
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(177, 177, 172);
+    list-style: none;
+
+}
+
+.footer ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+}
+
+/* FOOTER END */
