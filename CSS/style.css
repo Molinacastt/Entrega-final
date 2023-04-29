@@ -64,11 +64,6 @@
   border-radius: 4px;
 }
 
-/*@media screen and (min-width: 699px){
-    .nav-ul{
-        flex-direction: row;
-    }
-}*/
 /* NAV BAR END */
 /* MAIN INICIO */
 .main-in {
@@ -292,5 +287,6 @@
 }
 
 /* FOOTER END */
+
 
 /*# sourceMappingURL=style.css.map */

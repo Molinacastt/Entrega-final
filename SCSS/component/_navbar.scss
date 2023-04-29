@@ -1,0 +1,44 @@
+.logo {
+    background-image: url(../multimedia/Bandalos\ vintage\ 1.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .navbar-brand {
+    font-size: 34px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    padding-left: 530px;
+    color: white;
+  }
+  
+  @media (min-width: 800px) {
+    .navbar-nav {
+      padding-left: 10px;
+    }
+  }
+  .navbar {
+    background-color: rgba(41, 41, 39, 0.5);
+  }
+  
+  .navbar-brand {
+    color: rgb(226, 195, 17);
+  }
+  
+  .navbar-toggler {
+    background-color: rgb(226, 237, 237);
+  }
+  
+  .nav-link:hover {
+    color: rgb(210, 208, 92);
+    align-items: center;
+    border: 2px solid transparent;
+    padding: 2px;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  /* NAV BAR END */
