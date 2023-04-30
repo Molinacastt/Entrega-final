@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap");
+#primercolor {
+  color: gold;
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -10,13 +14,23 @@
   background-image: url(../multimedia/Bandalos\ vintage\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 20vh; /* ajusta la altura a la mitad de la ventana del navegador */
+  height: 50vw; /* ajusta la altura a la mitad de la ventana del navegador */
   width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
 }
 
 .navbar-nav {
   display: flex;
-  padding-left: 530px;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-family: "Ysabeau", sans-serif;
 }
@@ -28,7 +42,7 @@
 }
 
 .navbar-toggler {
-  background-color: rgb(138, 148, 148);
+  background-color: rgb(255, 255, 255);
 }
 
 .nav-link:hover {
@@ -36,8 +50,8 @@
   align-items: center;
   border: 2px solid transparent;
   padding: 2px;
-  transition: 0.4s;
-  border-radius: 4px;
+  transition: 0.8s;
+  border-radius: 15px;
   font-family: "Ysabeau", sans-serif;
 }
 
@@ -60,7 +74,7 @@
 /* FOOTER END */
 /* MAIN BEGINNING */
 .main-in {
-  background-color: rgb(213, 206, 187);
+  background-color: antiquewhite;
   padding: 0px;
   margin: 0;
   font-family: "Ysabeau", sans-serif;
@@ -81,7 +95,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.527);
   opacity: 0.5;
   mix-blend-mode: overlay;
 }
@@ -107,7 +121,7 @@
   text-decoration: none;
 }
 .main-in .navbar .bandaloslogo :hover {
-  color: black;
+  color: rgb(0, 0, 0);
   transition: 0.5s;
 }
 .main-in .navbar ul {
@@ -192,6 +206,7 @@
 
 /* MAIN DISCOGRAFIA BEGINNING */
 .main-disc {
+  background-color: antiquewhite;
   padding: 30px;
   display: grid;
   gap: 15px;
@@ -393,7 +408,7 @@
 }
 @media (min-width: 800px) {
   .navbar-nav {
-    padding-left: 10px;
+    padding: 15px;
   }
 }
 @media screen and (min-width: 699px) {

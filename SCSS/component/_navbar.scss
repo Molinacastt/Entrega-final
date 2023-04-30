@@ -4,25 +4,35 @@
     background-image: url(../multimedia/Bandalos\ vintage\ 1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh; /* ajusta la altura a la mitad de la ventana del navegador */
+    height: 50vw; /* ajusta la altura a la mitad de la ventana del navegador */
     width: 100%
   }
-  
-  .navbar-nav {
-    display: flex;
-    padding-left: 530px;
-    color: white;
-    font-family: 'Ysabeau', sans-serif;
 
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-nav .nav-link.active {
+    color: white;
   }
   
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Ysabeau', sans-serif;
+}
+  
   .navbar-brand {
-    color: rgb(226, 195, 17);font-family: 'Pacifico', cursive;
+    color: rgb(226, 195, 17);
+    font-family: 'Pacifico', cursive;
     font-size: 34px;
   }
   
   .navbar-toggler {
-    background-color: rgb(138, 148, 148);
+    background-color: rgb(255, 255, 255);
   }
   
   .nav-link:hover {
@@ -30,8 +40,8 @@
     align-items: center;
     border: 2px solid transparent;
     padding: 2px;
-    transition: 0.4s;
-    border-radius: 4px;
+    transition: 0.8s;
+    border-radius: 15px;
     font-family: 'Ysabeau', sans-serif;
   }
 
