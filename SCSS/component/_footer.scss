@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap');
+
 /* FOOTER BEGINNING */
 .footer {
+  font-family: 'Ysabeau', sans-serif;
     padding: 30px;
     margin: 0;
     text-align: center;
-    background-color: rgb(177, 177, 172);
+    background-color: rgb(25, 28, 34);
     list-style: none;
+    h2 {
+      color: rgb(145, 145, 138);
+    }
+    h3 {
+      color: rgb(145, 145, 138);
+    }
   }
   
   .footer ul {
+    color: aliceblue;
     text-decoration: none;
     list-style: none;
     padding: 20px;

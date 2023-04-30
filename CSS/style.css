@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap");
 #primercolor {
   color: gold;
 }
@@ -58,14 +59,22 @@
 /* NAV BAR END */
 /* FOOTER BEGINNING */
 .footer {
+  font-family: "Ysabeau", sans-serif;
   padding: 30px;
   margin: 0;
   text-align: center;
-  background-color: rgb(177, 177, 172);
+  background-color: rgb(25, 28, 34);
   list-style: none;
+}
+.footer h2 {
+  color: rgb(145, 145, 138);
+}
+.footer h3 {
+  color: rgb(145, 145, 138);
 }
 
 .footer ul {
+  color: aliceblue;
   text-decoration: none;
   list-style: none;
   padding: 20px;
@@ -191,8 +200,8 @@
 
 .abimg2 {
   display: flex;
-  padding: 20px;
   flex-direction: column;
+  padding-right: 20px;
   gap: 20px;
   height: 100%;
   width: 100%;
@@ -202,6 +211,70 @@
   padding-left: 130px;
   margin: 20px;
   color: rgb(52, 42, 19);
+}
+.abimg2 p {
+  margin: 15px;
+}
+
+.abimg3 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.abimg3 h1 {
+  padding-left: 130px;
+  margin: 20px;
+  color: rgb(52, 42, 19);
+}
+.abimg3 p {
+  margin: 15px;
+}
+
+.abimg4 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.abimg4 h1 {
+  padding-left: 130px;
+  margin: 20px;
+  color: rgb(52, 42, 19);
+}
+.abimg4 p {
+  margin: 15px;
+}
+
+.abimg5 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.abimg5 h1 {
+  padding-left: 130px;
+  margin: 20px;
+  color: rgb(52, 42, 19);
+}
+.abimg5 p {
+  margin: 15px;
+}
+
+.main-hist {
+  background-color: antiquewhite;
+  padding: 20px;
+  margin: 0;
+  font-family: "Ysabeau", sans-serif;
 }
 
 /* MAIN DISCOGRAFIA BEGINNING */
@@ -403,6 +476,21 @@
 }
 @media (min-width: 800px) {
   .abimg2 {
+    flex-direction: row;
+  }
+}
+@media (min-width: 800px) {
+  .abimg3 {
+    flex-direction: row;
+  }
+}
+@media (min-width: 800px) {
+  .abimg4 {
+    flex-direction: row;
+  }
+}
+@media (min-width: 800px) {
+  .abimg5 {
     flex-direction: row;
   }
 }
