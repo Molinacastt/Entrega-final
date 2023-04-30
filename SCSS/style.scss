@@ -1,8 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,500;1,400&display=swap");
+// BASE
 
+@import 'base/vars';
+@import 'base/reset';
 
+//COMPONENTS 
 
-/* FOOTER END */
+@import 'component/navbar';
+@import 'component/footer';
+
+//LAYOUT
+
+@import 'layout/index';
+@import 'layout/mediaquieries';
 
 /*# sourceMappingURL=style.css.map */
 

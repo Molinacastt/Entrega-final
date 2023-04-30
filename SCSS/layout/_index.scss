@@ -1,11 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap');
+
 /* MAIN BEGINNING */
 
 .main-in {
-    padding: 30px;
+    background-color: rgb(213, 206, 187);
+    padding: 0px;
     margin: 0;
-  }
-  
-  /* BODY INDEX */
+    font-family: 'Ysabeau', sans-serif;
+    min-height: 100vh;
+    position: relative;
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .capa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        mix-blend-mode: overlay;
+    }
+
+    .navbar {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+        position: relative;
+        z-index: 2;
+
+
+        .bandaloslogo {
+            display: flex;
+            font-family: 'Pacifico', cursive;
+            color: gold;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 30px;
+            font-size: 90px;
+            text-decoration: none;
+            :hover {
+                color: black;
+                transition: 0.5s;
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 65px;
+            padding: 25px;
+            
+            
+            li {
+                list-style: none;
+                background-color: rgb(255, 255, 255);
+                width: fit-content;
+                padding: 4px;
+                cursor: pointer;
+                border-radius: 20px;
+                :hover {
+                    background-color: rgb(0, 0, 0);
+                    border-radius: 3px;
+                    color: rgb(255, 251, 251);
+                    padding: 6px;
+                    border-radius: 20px;
+                    transition: 0.8s;
+                }
+
+            a {
+                text-decoration: none;
+                display: flex;
+                font-size: 15px;
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+            }
+
+        }
+
+    }
+}
+
+    // CODE BELOW IN ABOUT US 
+
+    hr {
+        border-width: 1px;
+        border-style: dotted;
+        border-color: black;
+        margin: 25px;
+    }
+}
+
+// FINISH ABOUT US
+
 .img1-ind {
     display: flex;
     flex-direction: column;
@@ -13,26 +111,72 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
-  
-  /* DISCOGRAFIA BEGINNING */
-  .main-disc {
+
+    div {
+        margin-top: 25px;
+    }
+}
+
+// MAIN ABOUT 
+
+.abimg1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    h1 {
+        padding-left: 130px;
+        margin: 20px;
+        color: rgb(52, 42, 19);
+    }
+
+    p {
+        margin: 15px;
+    }
+
+}
+
+.abimg2 {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    h1 {
+        padding-left: 130px;
+        margin: 20px;
+        color: rgb(52, 42, 19);
+    }
+}
+
+/* MAIN DISCOGRAFIA BEGINNING */
+
+.main-disc {
     padding: 30px;
     display: grid;
     gap: 15px;
-  }
-  
-  .main-disc h2 {
+    font-family: 'Ysabeau', sans-serif;
+
+}
+
+.main-disc h2 {
     text-align: center;
     padding-bottom: 20px;
-  }
-  
-  .main-in h2 {
+}
+
+.main-in h2 {
     color: rgb(54, 53, 47);
     font-size: 30px;
-  }
-  
-  .spot1 {
+}
+
+.spot1 {
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -40,12 +184,13 @@
     border: 2px solid black;
     border-radius: 7px;
     background-color: rgb(133, 112, 98);
-  }
-  
-  .spot1-div h1 {
+}
+
+.spot1-div h1 {
     padding: 20px;
-  }
-  .spot2 {
+}
+
+.spot2 {
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -53,12 +198,13 @@
     border: 2px solid black;
     border-radius: 7px;
     background-color: antiquewhite;
-  }
-  
-  .spot2-div h1 {
+}
+
+.spot2-div h1 {
     padding: 20px;
-  }
-  .spot3 {
+}
+
+.spot3 {
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -66,19 +212,22 @@
     border: 2px solid black;
     border-radius: 7px;
     background-color: rgb(124, 122, 120);
-  }
-  
-  .spot3-div h1 {
+}
+
+.spot3-div h1 {
     padding: 20px;
-  }
-  
-  /* DISCOGRAFIA END */
-  .main-jour {
+}
+
+/* MAIN DISCOGRAFIA END */
+
+// MAIN JOURNEY BEGINNING 
+
+.main-jour {
     text-align: center;
     padding: 20px;
-  }
-  
-  .grid {
+}
+
+.grid {
     background-color: rgb(211, 189, 156);
     padding: 10px;
     display: grid;
@@ -86,21 +235,21 @@
     grid-template-rows: auto;
     grid-template-areas: "area1 area1 area1 area2 area3" "area4 area4 area4 area5 area3";
     gap: 5px;
-  }
-  
-  .caja {
+}
+
+.caja {
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
-  }
-  
-  .caja img {
+}
+
+.caja img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-  }
-  
-  .c1 {
+}
+
+.c1 {
     grid-area: area1;
     background-color: aquamarine;
     display: flex;
@@ -108,9 +257,9 @@
     background-color: aliceblue;
     gap: 10px;
     padding: 10px;
-  }
-  
-  .c2 {
+}
+
+.c2 {
     grid-area: area2;
     background-color: rgb(96, 172, 147);
     display: flex;
@@ -118,9 +267,9 @@
     background-color: aliceblue;
     gap: 10px;
     padding: 10px;
-  }
-  
-  .c3 {
+}
+
+.c3 {
     grid-area: area3;
     background-color: rgb(23, 228, 160);
     display: flex;
@@ -128,9 +277,9 @@
     background-color: aliceblue;
     gap: 10px;
     padding: 10px;
-  }
-  
-  .c4 {
+}
+
+.c4 {
     grid-area: area4;
     background-color: rgb(53, 96, 82);
     display: flex;
@@ -138,9 +287,9 @@
     background-color: aliceblue;
     gap: 10px;
     padding: 10px;
-  }
-  
-  .c5 {
+}
+
+.c5 {
     grid-area: area5;
     background-color: rgb(119, 154, 142);
     display: flex;
@@ -148,69 +297,54 @@
     background-color: aliceblue;
     gap: 10px;
     padding: 10px;
-  }
-  
-  .caja__body {
+}
+
+.caja__body {
     padding: 10px;
-  }
-  
-  .c1 img {
+}
+
+.c1 img {
     height: 100%;
     width: 40%;
-  }
-  
-  .c2 img {
+}
+
+.c2 img {
     height: 55%;
-  }
-  
-  .c3 img {
+}
+
+.c3 img {
     height: 65%;
     width: 100%;
-  }
-  
-  .c4 img {
+}
+
+.c4 img {
     height: 70%;
-  }
-  
-  .c5 img {
+}
+
+.c5 img {
     height: 80%;
-  }
-  
-  .c1 h2 {
-    padding: 10px;
-  }
-  
-  .c2 h2 {
-    padding: 10px;
-  }
-  
-  .c3 h2 {
-    padding: 10px;
-  }
-  
-  .c4 h2 {
-    padding: 10px;
-  }
-  
-  .c5 h2 {
-    padding: 10px;
-  }
-  
-  /* JOURNEY END */
-  /* FOOTER BEGINNING */
-  .footer {
-    padding: 30px;
-    margin: 0;
-    text-align: center;
-    background-color: rgb(177, 177, 172);
-    list-style: none;
-  }
-  
-  .footer ul {
-    text-decoration: none;
-    list-style: none;
-    padding: 20px;
-  }
+}
 
+.c1 h2 {
+    padding: 10px;
+}
 
-  /* MAIN END */
+.c2 h2 {
+    padding: 10px;
+}
+
+.c3 h2 {
+    padding: 10px;
+}
+
+.c4 h2 {
+    padding: 10px;
+}
+
+.c5 h2 {
+    padding: 10px;
+}
+
+/* MAIN JOURNEY END */
+
+/* MAIN END */
