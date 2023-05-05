@@ -108,7 +108,7 @@
   opacity: 0.5;
   mix-blend-mode: overlay;
 }
-.main-in .navbar {
+.main-in .nav-inicio {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -119,28 +119,28 @@
   position: relative;
   z-index: 2;
 }
-.main-in .navbar .bandaloslogo {
+.main-in .nav-inicio .bandaloslogo {
   display: flex;
   font-family: "Pacifico", cursive;
   color: gold;
   align-items: center;
   padding: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 65px;
   font-size: 90px;
   text-decoration: none;
 }
-.main-in .navbar .bandaloslogo:hover {
+.main-in .nav-inicio .bandaloslogo:hover {
   color: rgb(0, 0, 0);
   transition: 0.5s;
   box-shadow: 10px 10px 5px 0;
   background-color: gold;
 }
-.main-in .navbar ul {
+.main-in .nav-inicio ul {
   display: flex;
   gap: 100px;
   padding: 0;
 }
-.main-in .navbar ul li {
+.main-in .nav-inicio ul li {
   font-family: "Pacifico", cursive;
   list-style: none;
   width: max-content;
@@ -150,7 +150,7 @@
   border-style: dotted gold;
   color: rgb(4, 4, 4);
 }
-.main-in .navbar ul li:hover {
+.main-in .nav-inicio ul li:hover {
   background-color: rgb(170, 170, 170);
   border-radius: 3px;
   padding: 6px;
@@ -158,14 +158,13 @@
   transition: 0.8s;
   box-shadow: 15px 15px 10px 0;
 }
-.main-in .navbar ul li a {
+.main-in .nav-inicio ul li a {
   text-decoration: none;
-  display: flex;
   font-size: 25px;
   color: rgb(170, 170, 170);
   font-weight: 800;
 }
-.main-in .navbar ul li a:hover {
+.main-in .nav-inicio ul li a:hover {
   color: rgb(0, 0, 0);
 }
 .main-in hr {
@@ -196,6 +195,9 @@
   width: 100%;
   object-fit: cover;
 }
+.abimg1 img {
+  border-radius: 15px;
+}
 .abimg1 h1 {
   padding-left: 130px;
   margin: 20px;
@@ -213,6 +215,10 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 15px;
+}
+.abimg2 img {
+  border-radius: 15px;
 }
 .abimg2 h1 {
   padding-left: 130px;
@@ -232,6 +238,9 @@
   width: 100%;
   object-fit: cover;
 }
+.abimg3 img {
+  border-radius: 15px;
+}
 .abimg3 h1 {
   padding-left: 130px;
   margin: 20px;
@@ -250,6 +259,9 @@
   width: 100%;
   object-fit: cover;
 }
+.abimg4 img {
+  border-radius: 15px;
+}
 .abimg4 h1 {
   padding-left: 130px;
   margin: 20px;
@@ -267,6 +279,9 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.abimg5 img {
+  border-radius: 15px;
 }
 .abimg5 h1 {
   padding-left: 130px;
@@ -292,10 +307,17 @@
   gap: 15px;
   font-family: "Ysabeau", sans-serif;
 }
-
-.main-disc h2 {
+.main-disc h1 {
   text-align: center;
   padding-bottom: 20px;
+  font-family: "Pacifico", cursive;
+  color: rgb(0, 0, 0);
+}
+.main-disc h2 {
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Pacifico", cursive;
 }
 
 .main-in h2 {
@@ -310,7 +332,7 @@
   gap: 10px;
   border: 2px solid black;
   border-radius: 7px;
-  background-color: rgb(133, 112, 98);
+  background-color: rgb(237, 233, 233);
 }
 
 .spot1-div h1 {
@@ -324,7 +346,7 @@
   gap: 20px;
   border: 2px solid black;
   border-radius: 7px;
-  background-color: antiquewhite;
+  background-color: rgb(245, 200, 142);
 }
 
 .spot2-div h1 {
@@ -345,132 +367,62 @@
   padding: 20px;
 }
 
+.spot4 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: antiquewhite;
+}
+
+.spot4-div h1 {
+  padding: 20px;
+}
+
 /* MAIN DISCOGRAFIA END */
 .main-jour {
   text-align: center;
   padding: 20px;
+  background-color: antiquewhite;
+  font-family: "Ysabeau", sans-serif;
+}
+.main-jour h1 {
+  font-family: "Pacifico", cursive;
+  margin-bottom: 50px;
 }
 
-.grid {
-  background-color: rgb(211, 189, 156);
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
-  grid-template-rows: auto;
-  grid-template-areas: "area1 area1 area1 area2 area3" "area4 area4 area4 area5 area3";
-  gap: 5px;
-}
-
-.caja {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(255, 255, 255);
-}
-
-.caja img {
-  width: 100%;
+.container img {
   height: 200px;
-  object-fit: cover;
+  width: 200px;
+  border-radius: 15px;
 }
-
-.c1 {
-  grid-area: area1;
-  background-color: aquamarine;
-  display: flex;
-  flex-direction: row;
-  background-color: aliceblue;
-  gap: 10px;
-  padding: 10px;
+.container .row-text {
+  margin-bottom: 20px;
 }
-
-.c2 {
-  grid-area: area2;
-  background-color: rgb(96, 172, 147);
-  display: flex;
-  flex-direction: column;
-  background-color: aliceblue;
-  gap: 10px;
-  padding: 10px;
+.container .disc-1floor img {
+  height: 80%;
+  width: 80%;
+  margin-bottom: 30px;
 }
-
-.c3 {
-  grid-area: area3;
-  background-color: rgb(23, 228, 160);
-  display: flex;
-  flex-direction: column;
-  background-color: aliceblue;
-  gap: 10px;
-  padding: 10px;
-}
-
-.c4 {
-  grid-area: area4;
-  background-color: rgb(53, 96, 82);
-  display: flex;
-  flex-direction: column;
-  background-color: aliceblue;
-  gap: 10px;
-  padding: 10px;
-}
-
-.c5 {
-  grid-area: area5;
-  background-color: rgb(119, 154, 142);
-  display: flex;
-  flex-direction: column;
-  background-color: aliceblue;
-  gap: 10px;
-  padding: 10px;
-}
-
-.caja__body {
-  padding: 10px;
-}
-
-.c1 img {
+.container .disc-2floor {
+  margin-top: 50px;
   height: 100%;
-  width: 40%;
-}
-
-.c2 img {
-  height: 55%;
-}
-
-.c3 img {
-  height: 65%;
   width: 100%;
 }
-
-.c4 img {
-  height: 70%;
-}
-
-.c5 img {
-  height: 80%;
-}
-
-.c1 h2 {
-  padding: 10px;
-}
-
-.c2 h2 {
-  padding: 10px;
-}
-
-.c3 h2 {
-  padding: 10px;
-}
-
-.c4 h2 {
-  padding: 10px;
-}
-
-.c5 h2 {
-  padding: 10px;
+.container .disc-2floor img {
+  height: 75%;
+  width: 75%;
 }
 
 /* MAIN JOURNEY END */
 /* MAIN END */
+@media (min-width: 800px) {
+  .nav-inicio {
+    flex-direction: row;
+  }
+}
 @media (min-width: 800px) {
   .img1-ind {
     flex-direction: row;
@@ -518,6 +470,11 @@
 }
 @media screen and (min-width: 699px) {
   .spot3 {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 699px) {
+  .spot4 {
     flex-direction: row;
   }
 }

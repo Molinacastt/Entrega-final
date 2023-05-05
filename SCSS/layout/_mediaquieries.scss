@@ -1,3 +1,13 @@
+// NAV INICIO 
+
+@media (min-width: 800px) {
+    .nav-inicio {
+      flex-direction: row;
+    }
+  }
+
+// END NAV INICIO  
+
 @media (min-width: 800px) {
     .img1-ind {
       flex-direction: row;
@@ -44,6 +54,8 @@
     }
   }
 
+  // DISCOGRAFIA START
+
   @media screen and (min-width: 699px) {
     .spot1 {
       flex-direction: row;
@@ -62,13 +74,16 @@
     }
   }
 
-  @media (min-width: 800px) {
-    .navbar-nav {
-      padding-left: 15px;
+  @media screen and (min-width: 699px) {
+    .spot4 {
+      flex-direction: row;
     }
   }
 
-  @media (min-width: 699) {
-    .navbar ul {
+  // DISCROGRAFIA END
+
+  @media (min-width: 800px) {
+    .navbar-nav {
+      padding-left: 15px;
     }
   }

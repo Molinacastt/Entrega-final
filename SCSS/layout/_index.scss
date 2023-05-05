@@ -30,7 +30,7 @@
         mix-blend-mode: overlay;
     }
 
-    .navbar {
+    .nav-inicio {
         padding-top: 100px;
         display: flex;
         flex-direction: column;
@@ -48,7 +48,7 @@
             color: gold;
             align-items: center;
             padding: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 65px;
             font-size: 90px;
             text-decoration: none;
             &:hover {
@@ -68,7 +68,6 @@
             li {
                 font-family: 'Pacifico', cursive;
                 list-style: none;
-                // background-color: rgb(245, 242, 242);
                 width:max-content;
                 padding: 4px;
                 cursor: pointer;
@@ -86,7 +85,6 @@
 
             a {
                 text-decoration: none;
-                display: flex;
                 font-size: 25px;
                 color: rgb(170, 170, 170);
                 font-weight: 800;
@@ -135,6 +133,9 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    img {
+        border-radius: 15px;
+    }
 
     h1 {
         padding-left: 130px;
@@ -156,6 +157,11 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 15px;
+    img {
+        border-radius: 15px;
+    }
+
 
     h1 {
         padding-left: 130px;
@@ -175,6 +181,9 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    img {
+        border-radius: 15px;
+    }
 
     h1 {
         padding-left: 130px;
@@ -196,6 +205,9 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    img {
+        border-radius: 15px;
+    }
 
     h1 {
         padding-left: 130px;
@@ -217,6 +229,9 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    img {
+        border-radius: 15px;
+    }
 
     h1 {
         padding-left: 130px;
@@ -249,12 +264,18 @@
     display: grid;
     gap: 15px;
     font-family: 'Ysabeau', sans-serif;
-
-}
-
-.main-disc h2 {
+    h1 {
     text-align: center;
     padding-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(0, 0, 0);
+    }
+    h2 {
+        font-weight: 900;
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: 'Pacifico', cursive;
+    }
 }
 
 .main-in h2 {
@@ -269,7 +290,7 @@
     gap: 10px;
     border: 2px solid black;
     border-radius: 7px;
-    background-color: rgb(133, 112, 98);
+    background-color: rgb(237, 233, 233);
 }
 
 .spot1-div h1 {
@@ -283,7 +304,7 @@
     gap: 20px;
     border: 2px solid black;
     border-radius: 7px;
-    background-color: antiquewhite;
+    background-color: rgb(245, 200, 142);
 }
 
 .spot2-div h1 {
@@ -304,6 +325,20 @@
     padding: 20px;
 }
 
+.spot4 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: antiquewhite;
+}
+
+.spot4-div h1 {
+    padding: 20px;
+}
+
 /* MAIN DISCOGRAFIA END */
 
 // MAIN JOURNEY BEGINNING 
@@ -311,125 +346,162 @@
 .main-jour {
     text-align: center;
     padding: 20px;
+    background-color: antiquewhite;
+    font-family: 'Ysabeau', sans-serif;
+    h1 {
+        font-family: 'Pacifico', cursive;
+        margin-bottom: 50px;
+    }
 }
 
-.grid {
-    background-color: rgb(211, 189, 156);
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    grid-template-rows: auto;
-    grid-template-areas: "area1 area1 area1 area2 area3" "area4 area4 area4 area5 area3";
-    gap: 5px;
+.container {
+    img {
+        height: 200px;
+        width: 200px;
+        border-radius: 15px;
+    }
+    .row-text {
+        margin-bottom: 20px;
+    }
+    .disc-1floor {
+        img {
+            height: 80%;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    }
+    .disc-2floor {
+        margin-top: 50px;
+        height: 100%;
+        width: 100%;
+        img {
+            height: 75%;
+            width: 75%;
+        }
+    }
+
 }
 
-.caja {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-}
 
-.caja img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
 
-.c1 {
-    grid-area: area1;
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: row;
-    background-color: aliceblue;
-    gap: 10px;
-    padding: 10px;
-}
 
-.c2 {
-    grid-area: area2;
-    background-color: rgb(96, 172, 147);
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
-    gap: 10px;
-    padding: 10px;
-}
+// .grid {
+//     background-color: rgb(211, 189, 156);
+//     padding: 10px;
+//     display: grid;
+//     grid-template-columns: repeat(5, 2fr);
+//     grid-template-rows: auto;
+//     grid-template-areas: "area1 area1 area1 area2 area3" "area4 area4 area4 area5 area3";
+//     gap: 5px;
+// }
 
-.c3 {
-    grid-area: area3;
-    background-color: rgb(23, 228, 160);
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
-    gap: 10px;
-    padding: 10px;
-}
+// .caja {
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgb(255, 255, 255);
+// }
 
-.c4 {
-    grid-area: area4;
-    background-color: rgb(53, 96, 82);
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
-    gap: 10px;
-    padding: 10px;
-}
+// .caja img {
+//     width: 100%;
+//     height: 200px;
+//     object-fit: cover;
+// }
 
-.c5 {
-    grid-area: area5;
-    background-color: rgb(119, 154, 142);
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
-    gap: 10px;
-    padding: 10px;
-}
+// .c1 {
+//     grid-area: area1;
+//     background-color: aquamarine;
+//     display: flex;
+//     flex-direction: row;
+//     background-color: aliceblue;
+//     gap: 10px;
+//     padding: 10px;
+// }
 
-.caja__body {
-    padding: 10px;
-}
+// .c2 {
+//     grid-area: area2;
+//     background-color: rgb(96, 172, 147);
+//     display: flex;
+//     flex-direction: column;
+//     background-color: aliceblue;
+//     gap: 10px;
+//     padding: 10px;
+// }
 
-.c1 img {
-    height: 100%;
-    width: 40%;
-}
+// .c3 {
+//     grid-area: area3;
+//     background-color: rgb(23, 228, 160);
+//     display: flex;
+//     flex-direction: column;
+//     background-color: aliceblue;
+//     gap: 10px;
+//     padding: 10px;
+// }
 
-.c2 img {
-    height: 55%;
-}
+// .c4 {
+//     grid-area: area4;
+//     background-color: rgb(53, 96, 82);
+//     display: flex;
+//     flex-direction: column;
+//     background-color: aliceblue;
+//     gap: 10px;
+//     padding: 10px;
+// }
 
-.c3 img {
-    height: 65%;
-    width: 100%;
-}
+// .c5 {
+//     grid-area: area5;
+//     background-color: rgb(119, 154, 142);
+//     display: flex;
+//     flex-direction: column;
+//     background-color: aliceblue;
+//     gap: 10px;
+//     padding: 10px;
+// }
 
-.c4 img {
-    height: 70%;
-}
+// .caja__body {
+//     padding: 10px;
+// }
 
-.c5 img {
-    height: 80%;
-}
+// .c1 img {
+//     height: 100%;
+//     width: 40%;
+// }
 
-.c1 h2 {
-    padding: 10px;
-}
+// .c2 img {
+//     height: 55%;
+// }
 
-.c2 h2 {
-    padding: 10px;
-}
+// .c3 img {
+//     height: 65%;
+//     width: 100%;
+// }
 
-.c3 h2 {
-    padding: 10px;
-}
+// .c4 img {
+//     height: 70%;
+// }
 
-.c4 h2 {
-    padding: 10px;
-}
+// .c5 img {
+//     height: 80%;
+// }
 
-.c5 h2 {
-    padding: 10px;
-}
+// .c1 h2 {
+//     padding: 10px;
+// }
+
+// .c2 h2 {
+//     padding: 10px;
+// }
+
+// .c3 h2 {
+//     padding: 10px;
+// }
+
+// .c4 h2 {
+//     padding: 10px;
+// }
+
+// .c5 h2 {
+//     padding: 10px;
+// }
 
 /* MAIN JOURNEY END */
 
