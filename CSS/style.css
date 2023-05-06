@@ -361,7 +361,7 @@
 }
 .main-hist .hist4 .hist4img img {
   height: 400px;
-  width: 450px;
+  width: 400px;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 10px 10px 10px 0px;
@@ -373,6 +373,7 @@
 .main-hist .hist4 .hist4img .singles {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 .main-hist .hist4 .hist4img .singles li {
@@ -442,7 +443,7 @@
   border: 2px solid black;
   border-radius: 15px;
   background-color: rgb(215, 66, 66);
-  color: white;
+  color: rgb(243, 238, 238);
 }
 .spot3 .spot3-div h1 {
   padding: 20px;
@@ -456,7 +457,7 @@
   border: 2px solid black;
   border-radius: 15px;
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: rgb(199, 195, 195);
 }
 .spot4 .spot4-div h1 {
   padding: 20px;
