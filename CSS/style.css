@@ -126,7 +126,7 @@
   color: rgb(4, 4, 4);
 }
 .nav-inicio ul li:hover {
-  background-color: rgb(170, 170, 170);
+  background-color: rgb(5, 5, 5);
   border-radius: 3px;
   padding: 6px;
   border-radius: 20px;
@@ -136,18 +136,18 @@
 .nav-inicio ul li a {
   text-decoration: none;
   font-size: 25px;
-  color: rgb(170, 170, 170);
+  color: rgb(254, 254, 254);
   font-weight: 800;
 }
 .nav-inicio ul li a:hover {
-  color: rgb(0, 0, 0);
+  color: gold;
 }
 
 .container1 {
   position: relative;
   height: 100vh;
 }
-.container1 .video-container {
+.container1 .image-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -156,7 +156,7 @@
   height: 100%;
   overflow: hidden;
 }
-.container1 .video-container video {
+.container1 .image-container img {
   position: relative;
   top: 50%;
   left: 50%;

@@ -49,7 +49,7 @@
             color: rgb(4, 4, 4);
 
             &:hover {
-                background-color: rgb(170, 170, 170);
+                background-color: rgb(5, 5, 5);
                 border-radius: 3px;
                 padding: 6px;
                 border-radius: 20px;
@@ -60,11 +60,11 @@
             a {
                 text-decoration: none;
                 font-size: 25px;
-                color: rgb(170, 170, 170);
+                color: rgb(254, 254, 254);
                 font-weight: 800;
-
+                // background-color: black;
                 &:hover {
-                    color: rgb(0, 0, 0);
+                    color: gold;
                 }
             }
 
@@ -75,13 +75,13 @@
 
 // FINISH NAV INDEX
 
-// VIDEO iINDEX START
+// IMAGE iINDEX START
 
 .container1 {
     position: relative;
     height: 100vh;
 
-    .video-container {
+    .image-container {
         position: absolute;
         top: 0;
         left: 0;
@@ -90,7 +90,7 @@
         height: 100%;
         overflow: hidden;
 
-        video {
+        img {
             position: relative;
             top: 50%;
             left: 50%;
