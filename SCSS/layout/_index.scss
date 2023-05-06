@@ -141,6 +141,7 @@
         padding-left: 130px;
         margin: 20px;
         color: rgb(52, 42, 19);
+        font-weight: 400;
     }
 
     p {
@@ -167,6 +168,7 @@
         padding-left: 130px;
         margin: 20px;
         color: rgb(52, 42, 19);
+        font-weight: 400;
     }
     p {
         margin: 15px;
@@ -189,6 +191,7 @@
         padding-left: 130px;
         margin: 20px;
         color: rgb(52, 42, 19);
+        font-weight: 400;
     }
 
     p {
@@ -213,6 +216,7 @@
         padding-left: 130px;
         margin: 20px;
         color: rgb(52, 42, 19);
+        font-weight: 400;
     }
 
     p {
@@ -237,6 +241,7 @@
         padding-left: 130px;
         margin: 20px;
         color: rgb(52, 42, 19);
+        font-weight: 400;
     }
 
     p {
@@ -289,12 +294,15 @@
     padding: 30px;
     gap: 10px;
     border: 2px solid black;
-    border-radius: 7px;
-    background-color: rgb(237, 233, 233);
-}
-
-.spot1-div h1 {
-    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(84, 80, 80);
+    color: white;
+    .spot1-div {
+        h1 {
+            padding: 20px;
+            color: white;
+        }
+    }
 }
 
 .spot2 {
@@ -303,12 +311,14 @@
     padding: 30px;
     gap: 20px;
     border: 2px solid black;
-    border-radius: 7px;
-    background-color: rgb(245, 200, 142);
-}
-
-.spot2-div h1 {
-    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(44, 98, 133);
+    color: white;
+    .spot2-div {
+        h1 {
+            padding: 20px;
+        }
+    }
 }
 
 .spot3 {
@@ -317,13 +327,16 @@
     padding: 30px;
     gap: 20px;
     border: 2px solid black;
-    border-radius: 7px;
-    background-color: rgb(124, 122, 120);
+    border-radius: 15px;
+    background-color: rgb(215, 66, 66);
+    color: white;
+    .spot3-div {
+        h1 {
+            padding: 20px;
+        }
+    }
 }
 
-.spot3-div h1 {
-    padding: 20px;
-}
 
 .spot4 {
     display: flex;
@@ -331,14 +344,17 @@
     padding: 30px;
     gap: 20px;
     border: 2px solid black;
-    border-radius: 7px;
-    background-color: antiquewhite;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    .spot4-div {
+        h1 {
+            padding: 20px;
+        }        
+    }
 }
 
-.spot4-div h1 {
-    padding: 20px;
-}
-
+ 
 /* MAIN DISCOGRAFIA END */
 
 // MAIN JOURNEY BEGINNING 
@@ -359,9 +375,11 @@
         height: 200px;
         width: 200px;
         border-radius: 15px;
-    }
-    .row-text {
-        margin-bottom: 20px;
+        box-shadow: 10px 10px 10px 0;
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.8s;
+        }
     }
     .disc-1floor {
         img {
@@ -369,15 +387,35 @@
             width: 80%;
             margin-bottom: 30px;
         }
+        p {
+            font-weight: 900;
+            font-size: 20px;
+            margin: 25px;
+            color: rgb(52, 42, 19);
+        }
     }
     .disc-2floor {
         margin-top: 50px;
         height: 100%;
         width: 100%;
+        margin-bottom: 50px;
         img {
-            height: 75%;
-            width: 75%;
+            height: 85%;
+            width: 85%;
         }
+        p {
+            font-weight: 900;
+            font-size: 20px;
+            margin: 25px;
+            color: rgb(52, 42, 19);
+        }
+    }
+
+    .img3 {
+        margin-top: 25px;
+    }
+    .img4 {
+        margin-top: 25px;
     }
 
 }

@@ -202,6 +202,7 @@
   padding-left: 130px;
   margin: 20px;
   color: rgb(52, 42, 19);
+  font-weight: 400;
 }
 .abimg1 p {
   margin: 15px;
@@ -224,6 +225,7 @@
   padding-left: 130px;
   margin: 20px;
   color: rgb(52, 42, 19);
+  font-weight: 400;
 }
 .abimg2 p {
   margin: 15px;
@@ -245,6 +247,7 @@
   padding-left: 130px;
   margin: 20px;
   color: rgb(52, 42, 19);
+  font-weight: 400;
 }
 .abimg3 p {
   margin: 15px;
@@ -266,6 +269,7 @@
   padding-left: 130px;
   margin: 20px;
   color: rgb(52, 42, 19);
+  font-weight: 400;
 }
 .abimg4 p {
   margin: 15px;
@@ -287,6 +291,7 @@
   padding-left: 130px;
   margin: 20px;
   color: rgb(52, 42, 19);
+  font-weight: 400;
 }
 .abimg5 p {
   margin: 15px;
@@ -331,12 +336,13 @@
   padding: 30px;
   gap: 10px;
   border: 2px solid black;
-  border-radius: 7px;
-  background-color: rgb(237, 233, 233);
+  border-radius: 15px;
+  background-color: rgb(84, 80, 80);
+  color: white;
 }
-
-.spot1-div h1 {
+.spot1 .spot1-div h1 {
   padding: 20px;
+  color: white;
 }
 
 .spot2 {
@@ -345,11 +351,11 @@
   padding: 30px;
   gap: 20px;
   border: 2px solid black;
-  border-radius: 7px;
-  background-color: rgb(245, 200, 142);
+  border-radius: 15px;
+  background-color: rgb(44, 98, 133);
+  color: white;
 }
-
-.spot2-div h1 {
+.spot2 .spot2-div h1 {
   padding: 20px;
 }
 
@@ -359,11 +365,11 @@
   padding: 30px;
   gap: 20px;
   border: 2px solid black;
-  border-radius: 7px;
-  background-color: rgb(124, 122, 120);
+  border-radius: 15px;
+  background-color: rgb(215, 66, 66);
+  color: white;
 }
-
-.spot3-div h1 {
+.spot3 .spot3-div h1 {
   padding: 20px;
 }
 
@@ -373,11 +379,11 @@
   padding: 30px;
   gap: 20px;
   border: 2px solid black;
-  border-radius: 7px;
-  background-color: antiquewhite;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
-
-.spot4-div h1 {
+.spot4 .spot4-div h1 {
   padding: 20px;
 }
 
@@ -397,23 +403,44 @@
   height: 200px;
   width: 200px;
   border-radius: 15px;
+  box-shadow: 10px 10px 10px 0;
 }
-.container .row-text {
-  margin-bottom: 20px;
+.container img:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
 }
 .container .disc-1floor img {
   height: 80%;
   width: 80%;
   margin-bottom: 30px;
 }
+.container .disc-1floor p {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 25px;
+  color: rgb(52, 42, 19);
+}
 .container .disc-2floor {
   margin-top: 50px;
   height: 100%;
   width: 100%;
+  margin-bottom: 50px;
 }
 .container .disc-2floor img {
-  height: 75%;
-  width: 75%;
+  height: 85%;
+  width: 85%;
+}
+.container .disc-2floor p {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 25px;
+  color: rgb(52, 42, 19);
+}
+.container .img3 {
+  margin-top: 25px;
+}
+.container .img4 {
+  margin-top: 25px;
 }
 
 /* MAIN JOURNEY END */
