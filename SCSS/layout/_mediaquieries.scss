@@ -3,6 +3,9 @@
 @media (min-width: 800px) {
     .nav-inicio {
       flex-direction: row;
+      ul {
+        flex-direction: row;
+      }
     }
   }
 

@@ -1,39 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap');
 
+.container1 {
+    position: relative;
+    height: 100vh;
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -3;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        video {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
 /* MAIN BEGINNING */
 
-.main-in {
-    background-color: antiquewhite;
-    padding: 0px;
-    margin: 0;
-    font-family: 'Ysabeau', sans-serif;
-    min-height: 100vh;
-    position: relative;
+    // video {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    // }
 
-    video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .capa {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.527);
-        opacity: 0.5;
-        mix-blend-mode: overlay;
-    }
+    // .capa {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: rgba(0, 0, 0, 0.527);
+    //     opacity: 0.5;
+    //     mix-blend-mode: overlay;
+    // }
 
     .nav-inicio {
         padding-top: 100px;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 60%;
@@ -44,6 +56,8 @@
 
         .bandaloslogo {
             display: flex;
+            align-items: center;
+            justify-content: center;
             font-family: 'Pacifico', cursive;
             color: gold;
             align-items: center;
@@ -61,10 +75,9 @@
 
         ul {
             display: flex;
+            flex-direction: column;
             gap: 100px;
             padding: 0;
-            
-            
             li {
                 font-family: 'Pacifico', cursive;
                 list-style: none;
@@ -82,7 +95,6 @@
                     transition: 0.8s;
                     box-shadow: 15px 15px 10px 0;
                 }
-
             a {
                 text-decoration: none;
                 font-size: 25px;
@@ -98,7 +110,16 @@
     }
 }
 
-    // CODE BELOW IN ABOUT US 
+
+.main-in {
+    background-color: antiquewhite;
+    padding: 0px;
+    margin: 0;
+    font-family: 'Ysabeau', sans-serif;
+    min-height: 100vh;
+    position: relative;
+
+    // CODE BELOW IN "ABOUT US" 
 
     hr {
         border-width: 1px;
@@ -108,7 +129,7 @@
     }
 }
 
-// FINISH ABOUT US
+    // FINISH ABOUT US
 
 .img1-ind {
     display: flex;
@@ -419,127 +440,6 @@
     }
 
 }
-
-
-
-
-// .grid {
-//     background-color: rgb(211, 189, 156);
-//     padding: 10px;
-//     display: grid;
-//     grid-template-columns: repeat(5, 2fr);
-//     grid-template-rows: auto;
-//     grid-template-areas: "area1 area1 area1 area2 area3" "area4 area4 area4 area5 area3";
-//     gap: 5px;
-// }
-
-// .caja {
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgb(255, 255, 255);
-// }
-
-// .caja img {
-//     width: 100%;
-//     height: 200px;
-//     object-fit: cover;
-// }
-
-// .c1 {
-//     grid-area: area1;
-//     background-color: aquamarine;
-//     display: flex;
-//     flex-direction: row;
-//     background-color: aliceblue;
-//     gap: 10px;
-//     padding: 10px;
-// }
-
-// .c2 {
-//     grid-area: area2;
-//     background-color: rgb(96, 172, 147);
-//     display: flex;
-//     flex-direction: column;
-//     background-color: aliceblue;
-//     gap: 10px;
-//     padding: 10px;
-// }
-
-// .c3 {
-//     grid-area: area3;
-//     background-color: rgb(23, 228, 160);
-//     display: flex;
-//     flex-direction: column;
-//     background-color: aliceblue;
-//     gap: 10px;
-//     padding: 10px;
-// }
-
-// .c4 {
-//     grid-area: area4;
-//     background-color: rgb(53, 96, 82);
-//     display: flex;
-//     flex-direction: column;
-//     background-color: aliceblue;
-//     gap: 10px;
-//     padding: 10px;
-// }
-
-// .c5 {
-//     grid-area: area5;
-//     background-color: rgb(119, 154, 142);
-//     display: flex;
-//     flex-direction: column;
-//     background-color: aliceblue;
-//     gap: 10px;
-//     padding: 10px;
-// }
-
-// .caja__body {
-//     padding: 10px;
-// }
-
-// .c1 img {
-//     height: 100%;
-//     width: 40%;
-// }
-
-// .c2 img {
-//     height: 55%;
-// }
-
-// .c3 img {
-//     height: 65%;
-//     width: 100%;
-// }
-
-// .c4 img {
-//     height: 70%;
-// }
-
-// .c5 img {
-//     height: 80%;
-// }
-
-// .c1 h2 {
-//     padding: 10px;
-// }
-
-// .c2 h2 {
-//     padding: 10px;
-// }
-
-// .c3 h2 {
-//     padding: 10px;
-// }
-
-// .c4 h2 {
-//     padding: 10px;
-// }
-
-// .c5 h2 {
-//     padding: 10px;
-// }
 
 /* MAIN JOURNEY END */
 

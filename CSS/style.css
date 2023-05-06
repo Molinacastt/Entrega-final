@@ -81,37 +81,32 @@
 }
 
 /* FOOTER END */
-/* MAIN BEGINNING */
-.main-in {
-  background-color: antiquewhite;
-  padding: 0px;
-  margin: 0;
-  font-family: "Ysabeau", sans-serif;
-  min-height: 100vh;
+.container1 {
   position: relative;
+  height: 100vh;
 }
-.main-in video {
+.container1 .video-container {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -3;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+.container1 .video-container video {
+  position: relative;
+  top: 50%;
+  left: 50%;
   object-fit: cover;
-}
-.main-in .capa {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.527);
-  opacity: 0.5;
-  mix-blend-mode: overlay;
+  transform: translate(-50%, -50%);
 }
-.main-in .nav-inicio {
+
+/* MAIN BEGINNING */
+.nav-inicio {
   padding-top: 100px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 60%;
@@ -119,8 +114,10 @@
   position: relative;
   z-index: 2;
 }
-.main-in .nav-inicio .bandaloslogo {
+.nav-inicio .bandaloslogo {
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Pacifico", cursive;
   color: gold;
   align-items: center;
@@ -129,18 +126,19 @@
   font-size: 90px;
   text-decoration: none;
 }
-.main-in .nav-inicio .bandaloslogo:hover {
+.nav-inicio .bandaloslogo:hover {
   color: rgb(0, 0, 0);
   transition: 0.5s;
   box-shadow: 10px 10px 5px 0;
   background-color: gold;
 }
-.main-in .nav-inicio ul {
+.nav-inicio ul {
   display: flex;
+  flex-direction: column;
   gap: 100px;
   padding: 0;
 }
-.main-in .nav-inicio ul li {
+.nav-inicio ul li {
   font-family: "Pacifico", cursive;
   list-style: none;
   width: max-content;
@@ -150,7 +148,7 @@
   border-style: dotted gold;
   color: rgb(4, 4, 4);
 }
-.main-in .nav-inicio ul li:hover {
+.nav-inicio ul li:hover {
   background-color: rgb(170, 170, 170);
   border-radius: 3px;
   padding: 6px;
@@ -158,14 +156,23 @@
   transition: 0.8s;
   box-shadow: 15px 15px 10px 0;
 }
-.main-in .nav-inicio ul li a {
+.nav-inicio ul li a {
   text-decoration: none;
   font-size: 25px;
   color: rgb(170, 170, 170);
   font-weight: 800;
 }
-.main-in .nav-inicio ul li a:hover {
+.nav-inicio ul li a:hover {
   color: rgb(0, 0, 0);
+}
+
+.main-in {
+  background-color: antiquewhite;
+  padding: 0px;
+  margin: 0;
+  font-family: "Ysabeau", sans-serif;
+  min-height: 100vh;
+  position: relative;
 }
 .main-in hr {
   border-width: 1px;
@@ -447,6 +454,9 @@
 /* MAIN END */
 @media (min-width: 800px) {
   .nav-inicio {
+    flex-direction: row;
+  }
+  .nav-inicio ul {
     flex-direction: row;
   }
 }
