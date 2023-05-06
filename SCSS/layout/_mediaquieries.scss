@@ -1,13 +1,13 @@
 // NAV INICIO 
 
-@media (min-width: 800px) {
-    .nav-inicio {
-      flex-direction: row;
-      ul {
-        flex-direction: row;
-      }
+@media (max-width: 700px) {
+  .nav-inicio {
+    ul {
+      flex-direction: column;
+      gap: 30px;
     }
   }
+}
 
 // END NAV INICIO  
 
