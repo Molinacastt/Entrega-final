@@ -9,6 +9,12 @@
   }
 }
 
+// @media (min-width: 700px) {
+//   .bandaloslogo {
+//     margin-bottom: 10px;
+//   }
+// }
+
 // END NAV INICIO  
 
 @media (min-width: 800px) {
@@ -56,6 +62,18 @@
         padding: 15px;
     }
   }
+
+  // HISTORY START 
+ 
+  @media (max-width: 800px) {
+    .hist4img {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+  // HISTORY END
 
   // DISCOGRAFIA START
 
